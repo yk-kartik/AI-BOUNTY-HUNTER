@@ -1,0 +1,24 @@
+AI-Bounty-Hunter Validation Results
+Date: 2026-09-30
+
+Automated unit tests:
+- 10 tests executed
+- 10 passed
+- 0 failed
+
+Covered areas:
+1. Exact SEARCH/REPLACE patch application
+2. Duplicate SEARCH match rejection
+3. Multiple FILE header rejection
+4. Placeholder rejection
+5. Exact target-file resolution
+6. Missing target-file rejection
+7. Repository traversal rejection
+8. Successful PR classification
+9. Failed run classification
+10. Timeout classification
+
+Smoke test:
+- main.py starts successfully and handles unavailable GitHub connectivity without crashing.
+- With credentials removed and the placeholder repository used, the program exits with status 1 and reports that no usable target issue was found.
+- A live end-to-end GitHub/Gemini run was not performed in this environment because external network access was unavailable and no API credentials were supplied.
